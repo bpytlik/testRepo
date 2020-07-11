@@ -3,5 +3,5 @@
 mkdir -p $HOME/secrets
 
 echo "HELLO"
-echo ${secrets.SUPERSECRET}
-echo ${secrets.SUPERSECRET} > $HOME/secrets/supersecret
+echo ${SUPERSECRET}
+echo ${SUPERSECRET} > $HOME/secrets/supersecret

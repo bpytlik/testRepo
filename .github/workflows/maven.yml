@@ -20,8 +20,12 @@ jobs:
       run: ls .
     - name: Run ls foo
       run: ls ./foo.sh
-    - name: Run hello
+    - name: Run foo
       run: ./foo.sh
+      env:
+        SUPERSECRET: ${{ secrets.SUPERSECRET }}
+    - name: Read secret
+      run: cat $HOME/secrets/supersecret
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
