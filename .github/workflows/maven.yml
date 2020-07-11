@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run ls
       run: ls .
-    - name: Run ls github
+    - name: Run ls foo
       run: ls ./foo.sh
     - name: Run hello
       run: ./foo.sh
