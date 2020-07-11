@@ -16,6 +16,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Run ls
+      run: ls .
+    - name: Run ls github
+      run: ls ./.github
+    - name: Run ls github scripts
+      run: ls ./.github/scripts
     - name: Run hello
       run: ./.github/scripts/hello.sh
     - name: Set up JDK 1.8
