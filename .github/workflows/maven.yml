@@ -23,7 +23,7 @@ jobs:
     - name: Run foo
       run: ./foo.sh
       env:
-	WHEE: WHEE
+	SUPERSECRET: ${{ secrets.SUPERSECRET }}
     - name: Read secret
       run: cat $HOME/secrets/supersecret
     - name: Read foo
